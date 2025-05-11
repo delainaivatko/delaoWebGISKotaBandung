@@ -1,0 +1,255 @@
+/* Style Kerangka Secara Umum */
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    caret-color: transparent;
+    }
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    /* Seluruh Komponen Pada Header */
+    .logo {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    }
+    .logo img {
+    width: 80px; /* Set the width of the logo */
+    margin-right: 10px; /* Add some space between the image and title */
+    }
+    .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    }
+    header nav {
+    display: flex;
+    justify-content: flex-start;
+    }
+    header nav a {
+    color:#E8EBD2;
+    text-decoration:none;
+    font-weight: bold;
+    margin: 0 20px;
+    }
+    #navbar {
+        background-color: #ffffff; /* Soft blue color without transparency */
+        color: #94c3fd;
+        padding: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        border-bottom: 2px solid #333;
+        font-family: 'Montserrat', sans-serif;
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        }
+        .logo h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+        }
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        nav ul li {
+        display: inline;
+        margin-left: 20px;
+        }
+        nav ul li:first-child {
+        margin-left: 0;
+        }
+        nav ul li a {
+        color: #E8EBD2;
+        text-decoration: none;
+        font-size: 16px;
+        position: relative; /* Needed for pseudo-element positioning */
+        }
+        nav ul li a::before {
+        content: '';
+        position: absolute;
+        top: -7px; /* Move the pseudo-element up by half of the hover size */
+        left: -7px; /* Move the pseudo-element left by half of the hover size */
+        width: calc(100% + 14px); /* Expand the width by 14 pixels (7px on each side) */
+        height: calc(100% + 14px); /* Expand the height by 14 pixels (7px on each side) */
+        background-color: #94c3fd; /* Background color without transparency */
+        border-radius: 10px; /* Rounded corners */
+        z-index: -1; /* Behind the text */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        nav ul li a:hover::before {
+        background-color: #ffffff; /* Adjusted hover color without transparency */
+        }
+        nav ul li a:hover { 
+            color: #94c3fd; /* Adjusted font color to match hover color */
+}
+
+    
+    .hero-content {
+        max-width: 1800px;
+        padding: 20px;
+        background-color: #8faedf7e;
+        border-radius: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        }
+        
+/* Map Section */
+#map { 
+    width: 95%;
+    height: 800px;
+    background-color: lightgray;
+    margin: 40px auto; /* Adjusted margin for space */
+    border: 2px solid #ccc; /* Add a border with a subtle color */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Relative positioning for child elements */
+    z-index: 1; /* Set z-index to be behind the header */
+}
+#map-section h2 {
+text-align: center;
+margin-top: 20;
+font-size: 28px;
+margin-bottom: 20px;
+color: #94c3fd;
+}
+
+/* Data Section Styles */
+#data-section {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+    color: #94c3fd;
+    }
+    #data-section .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+    }
+    #data-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    clear: both;
+    }
+    .column {
+    flex: 0 0 calc(30% - 20px);
+    max-width: 500px;
+    margin-bottom: 40px;
+    }
+    .data-item {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: auto 10px;
+    }
+    .data-item img {
+        display: block;
+        margin: 20px auto 0 auto; /* atas-auto-bawah-auto */
+        width: 50%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+        .description {
+        padding: 20px;
+        height: 350px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        }
+        .description h3 {
+        margin-top: 0;
+        font-size: 24px;
+        text-align: center;
+        color: #94c3fd;
+        }
+        .description p {
+        color: #94c3fd;
+        font-size: 16px;
+        }
+/* Author Section */
+/* Author Section */
+#author-section {
+    background-color: #f4f4f4;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    color: #94c3fd;
+    }
+    .author-content {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    .author-content h2 {
+    text-align: center;
+    color: #94c3fd;
+    }
+    .author-name {
+    text-align: center; /* Center-align only the author's name */
+    color: #94c3fd;
+    }
+    .profile-picture {
+    height: 100px;
+    width: auto;
+    color: #94c3fd;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 20px; /* Center the picture horizontally and add margin at the bottom */
+    display: block; /* Ensure it behaves as a block element */
+    text-align: center;
+    }
+    #footer {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #94c3fd;
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-shrink: 0;
+    }
+    .leaflet-control-custom {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+        background-color: white;
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+      }
+
+      .legend { 
+        padding: 10px 15px; 
+        background-color: rgba(255, 255, 255, 0.95); 
+        box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+        border-radius: 5px; 
+        font-size: 12px;
+        max-width: 250px;
+        border: 1px solid #999;
+    } 
+    
+    .legend div { 
+        width: 30px; 
+        height: 10px; 
+        float: left; 
+        margin-right: 8px; 
+        opacity: 1; /* Warna solid */
+        border: 1px solid #44444433; /* garis batas tipis */
+    } 
+    
+    div.legend.leaflet-control br { 
+        clear: both; 
+    }
+    
